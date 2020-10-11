@@ -1,12 +1,12 @@
 package ru.netology.domain;
 
 public class Post {
-    private int id;
-    private int ownerId;
-    private int fromId;
+    private long id;
+    private long ownerId;
+    private long fromId;
     private int date;
-    private int replyOwnerId;
-    private int replyPostId;
+    private long replyOwnerId;
+    private long replyPostId;
     private int friendsOnly;
     private String text;
     private String copyright;
@@ -25,27 +25,27 @@ public class Post {
     private int postponedId;
     private int signerId;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public int getOwnerId() {
+    public long getOwnerId() {
         return ownerId;
     }
 
-    public void setOwnerId(int ownerId) {
+    public void setOwnerId(long ownerId) {
         this.ownerId = ownerId;
     }
 
-    public int getFromId() {
+    public long getFromId() {
         return fromId;
     }
 
-    public void setFromId(int fromId) {
+    public void setFromId(long fromId) {
         this.fromId = fromId;
     }
 
@@ -57,21 +57,21 @@ public class Post {
         this.date = date;
     }
 
-    public int getReplyOwnerId() {
+    public long getReplyOwnerId() {
         return replyOwnerId;
     }
 
 
-    public void setReplyOwnerId(int replyOwnerId) {
+    public void setReplyOwnerId(long replyOwnerId) {
         this.replyOwnerId = replyOwnerId;
     }
 
-    public int getReplyPostId() {
+    public long getReplyPostId() {
         return replyPostId;
     }
 
 
-    public void setReplyPostId(int replyPostId) {
+    public void setReplyPostId(long replyPostId) {
         this.replyPostId = replyPostId;
     }
 
@@ -179,7 +179,7 @@ public class Post {
     }
 
 
-    public void setLikeInfo(LikesInfo likeInfo) {
+    public void setLikeInfo(LikesInfo likesInfo) {
         this.likesInfo = likesInfo;
     }
 
