@@ -2,20 +2,28 @@ package ru.netology.domain;
 
 public class Post {
     private int id;
-    private int date;
-    private String text;
+    private int ownerId;
     private int fromId;
+    private int date;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int friendsOnly;
+    private String text;
     private String copyright;
     private String postType;
-    private int canPinEntry;
-    private int canDeleteEntry;
-    private int isPinnedEntry;
-    private int markAdvert;
+    private int canPin;
+    private int canDelete;
+    private int isPinned;
+    private int markedAsAds;
     private boolean isFavorite;
     private CommentsInfo commentsInfo;
     private ViewsInfo viewsInfo;
     private LikesInfo likesInfo;
     private RepostInfo repostInfo;
+    private PostSource postSource;
+    private Geo geo;
+    private int postponedId;
+    private int signerId;
 
     public int getId() {
         return id;
@@ -23,6 +31,22 @@ public class Post {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public int getFromId() {
+        return fromId;
+    }
+
+    public void setFromId(int fromId) {
+        this.fromId = fromId;
     }
 
     public int getDate() {
@@ -33,6 +57,32 @@ public class Post {
         this.date = date;
     }
 
+    public int getReplyOwnerId() {
+        return replyOwnerId;
+    }
+
+
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
+    }
+
+    public int getReplyPostId() {
+        return replyPostId;
+    }
+
+
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
+    }
+
+    public int getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(int friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
+
     public String getText() {
         return text;
     }
@@ -41,16 +91,7 @@ public class Post {
         this.text = text;
     }
 
-    public int getFromId() {
-        return fromId;
-    }
-
-
-    public void setFromId(int fromId) {
-        this.fromId = fromId;
-    }
-
-    public String getCopyright() {
+        public String getCopyright() {
         return copyright;
     }
 
@@ -68,42 +109,42 @@ public class Post {
         this.postType = postType;
     }
 
-    public int getCanPinEntry() {
-        return canPinEntry;
+    public int getCanPin() {
+        return canPin;
     }
 
 
-    public void setCanPinEntry(int canPinEntry) {
-        this.canPinEntry = canPinEntry;
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
     }
 
 
-    public int getCanDeleteEntry() {
-        return canDeleteEntry;
+    public int getCanDelete() {
+        return canDelete;
     }
 
 
-    public void setCanDeleteEntry(int canDeleteEntry) {
-        this.canDeleteEntry = canDeleteEntry;
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
     }
 
-    public int getIsPinnedEntry() {
-        return isPinnedEntry;
-    }
-
-
-    public void setIsPinnedEntry(int isPinnedEntry) {
-        this.isPinnedEntry = isPinnedEntry;
+    public int getIsPinned() {
+        return isPinned;
     }
 
 
-    public int getMarkAdvert() {
-        return markAdvert;
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
     }
 
 
-    public void setMarkAdvert(int markAdvert) {
-        this.markAdvert = markAdvert;
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
     }
 
     public boolean isFavorite() {
@@ -151,4 +192,37 @@ public class Post {
         this.repostInfo = repostInfo;
     }
 
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
 }

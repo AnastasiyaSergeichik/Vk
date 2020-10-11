@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 public class LikesInfo {
     private int count;
-    private int metkaLikes;
+    private int userLikes;
 
     public int getCount() {
         return count;
@@ -12,11 +12,11 @@ public class LikesInfo {
         this.count = count;
     }
 
-    public int getMetkaLikes() {
-        return metkaLikes;
+    public int getUserLikes() {
+        return userLikes;
     }
 
-    public void setMetkaLikes(int metkaLikes) {
-        this.metkaLikes = metkaLikes;
+    public void setUserLikes(int userLikes) {
+        this.userLikes = userLikes;
     }
 }
