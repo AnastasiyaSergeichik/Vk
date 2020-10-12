@@ -11,8 +11,8 @@ public class Post {
     private String text;
     private String copyright;
     private String postType;
-    private int canPin;
-    private int canDelete;
+    private boolean canPin;
+    private boolean canDelete;
     private int isPinned;
     private int markedAsAds;
     private boolean isFavorite;
@@ -109,22 +109,22 @@ public class Post {
         this.postType = postType;
     }
 
-    public int getCanPin() {
+    public boolean isCanPin() {
         return canPin;
     }
 
 
-    public void setCanPin(int canPin) {
+    public void setCanPin(boolean canPin) {
         this.canPin = canPin;
     }
 
 
-    public int getCanDelete() {
+    public boolean isCanDelete() {
         return canDelete;
     }
 
 
-    public void setCanDelete(int canDelete) {
+    public void setCanDelete(boolean canDelete) {
         this.canDelete = canDelete;
     }
 
